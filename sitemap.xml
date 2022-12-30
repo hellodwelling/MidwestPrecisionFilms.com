@@ -46,13 +46,6 @@
     </url>
 
     <url>
-        <loc>https://MidwestPrecisionFilms.com/service-Aftermarket-Auto-Accessories-</loc>
-        <lastmod>2022-12-30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
         <loc>https://MidwestPrecisionFilms.com/service-Window-Tinting</loc>
         <lastmod>2022-12-30</lastmod>
         <changefreq>weekly</changefreq>
@@ -68,6 +61,13 @@
 
     <url>
         <loc>https://MidwestPrecisionFilms.com/service-Interior-detailing</loc>
+        <lastmod>2022-12-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://MidwestPrecisionFilms.com/service-Aftermarket-Auto-Accessories-</loc>
         <lastmod>2022-12-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
