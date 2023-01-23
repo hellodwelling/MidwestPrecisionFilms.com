@@ -323,15 +323,16 @@
                     </p>
                     <div class="w-full sm:w-auto">
                         
-                        <div onclick="postCtaClick('text')" class="w-full sm:w-auto cta_text_button hover:scale-110 transition duration-300 ease-in-out">
-                            <button
+                        <div onclick="postCtaClick('link')" class="w-full sm:w-auto hover:scale-110 transition duration-300 ease-in-out">
+                            <a
+                                target="_blank" rel="noopener noreferrer" 
+                                href="https://app.shopmonkey.io/quote-request/ab66d83abcec1ac5a7b196a15b2a663d?noExternalScripts=1"
                                 :class="{'scale-100': !scrolledFromTop, 'scale-100': scrolledFromTop}"
-                                @click="contactModalOpen = true"
                                 class="inline-flex items-center justify-center w-full px-7 py-3 text-base font-medium transition border-2 border-transparent rounded-md  text-primary-foreground focus:outline-none hover:bg-primary-darker sm:w-auto bg-primary focus:ring-0 focus:ring-offset-0"
                                 >
-                                Send us a Text
-                            </button>
-                        </div> 
+                               Book Now
+                            </a>
+                        </div>
                         
                     </div>
 
@@ -519,13 +520,13 @@
                         </div>
                             <div class="flex flex-col fixed bottom-0 w-full p-2 bg-primary sm:bg-gray-50">
                                 
-                                <div onclick="postCtaClick('text')" class="w-full sm:w-auto">
-                                    <button
-                                    @click="contactModalOpen = true"
-                                    class="relative block w-full px-5 py-3 font-medium text-center rounded-md bg-secondary focus:outline-none focus:ring focus:z-10 text-white sm:text-secondary hover:bg-gray-100 my-2"
-                                    >
-                                        Send us a Text
-                                    </button>
+                                <div onclick="postCtaClick('link')" class="w-full sm:w-auto">
+                                    <a
+                                        href="https://app.shopmonkey.io/quote-request/ab66d83abcec1ac5a7b196a15b2a663d?noExternalScripts=1"
+                                        class="relative block w-full px-5 py-3 font-medium text-center rounded-md bg-secondary focus:outline-none focus:ring focus:z-10 text-white sm:text-secondary hover:bg-gray-100 my-2"
+                                        >
+                                        Book Now
+                                    </a>
                                 </div>
                                 
 
@@ -713,15 +714,15 @@
             </h2>
             <div class="w-full mt-5 sm:mt-8 sm:flex sm:justify-center">
                 
-                <div onclick="postCtaClick('text')" class="w-full sm:w-auto mr-4 cta_text_button">
-                    <button 
-                        @click="contactModalOpen = true"
-                        class="flex justify-center w-full relative rounded p-3 sm:px-10 sm:py-4 overflow-hidden group bg-secondary relative hover:bg-gradient-to-r hover:from-secondary-lighter hover:to-secondary-darker text-white hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300"
-                    >
+                <div onclick="postCtaClick('link')" class="w-full sm:w-auto mr-4 cta_text_button">
+                    <a
+                        target="_blank" rel="noopener noreferrer" 
+                        href="https://app.shopmonkey.io/quote-request/ab66d83abcec1ac5a7b196a15b2a663d?noExternalScripts=1"
+                        class="flex justify-center w-full relative rounded p-3 sm:px-10 sm:py-4 overflow-hidden group bg-secondary relative hover:bg-gradient-to-r hover:from-secondary-lighter hover:to-secondary-darker text-white hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300">
                         <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-                        <span class="relative">Get a Free Quote</span>
-                    </button>
-                </div> 
+                        <span class="relative">Book Now</span>
+                    </a>
+                </div>
                 
                     
                 
