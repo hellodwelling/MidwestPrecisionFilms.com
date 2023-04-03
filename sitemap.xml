@@ -11,13 +11,6 @@
     </url>
 
     <url>
-        <loc>https://MidwestPrecisionFilms.com/service-Ceramic-window-tint</loc>
-        <lastmod>2023-04-03</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
         <loc>https://MidwestPrecisionFilms.com/service-Carbon-window-tint</loc>
         <lastmod>2023-04-03</lastmod>
         <changefreq>weekly</changefreq>
@@ -33,6 +26,13 @@
 
     <url>
         <loc>https://MidwestPrecisionFilms.com/service-Residential-window-tint</loc>
+        <lastmod>2023-04-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://MidwestPrecisionFilms.com/service-Ceramic-window-tint</loc>
         <lastmod>2023-04-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
