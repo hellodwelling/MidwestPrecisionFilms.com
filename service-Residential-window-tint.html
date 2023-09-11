@@ -399,16 +399,15 @@
                     </p>
                     <div class="w-full sm:w-auto">
                         
-                        <div onclick="postCtaClick('call')" class="w-full sm:w-auto hover:scale-110 transition duration-300 ease-in-out">
-                            <a
-                                target = "_blank" 
-                                href="tel:+15743123618"
+                        <div onclick="postCtaClick('text')" class="w-full sm:w-auto cta_text_button hover:scale-110 transition duration-300 ease-in-out">
+                            <button
                                 :class="{'scale-100': !scrolledFromTop, 'scale-100': scrolledFromTop}"
-                                class="cta_call_conversion inline-flex items-center justify-center w-full px-5 py-3 whitespace-nowrap text-base font-medium transition border-2 border-transparent rounded-md  text-primary-foreground focus:outline-none sm:w-auto  bg-primary hover:bg-primary-darker  focus:ring-0 focus:ring-offset-0"
+                                @click="contactModalOpen = true"
+                                class="inline-flex items-center justify-center w-full px-5 py-3 whitespace-nowrap text-base font-medium transition border-2 border-transparent rounded-md  text-primary-foreground focus:outline-none sm:w-auto  bg-primary hover:bg-primary-darker  focus:ring-0 focus:ring-offset-0"
                                 >
-                                Book Now
-                            </a>
-                        </div>
+                                Get a Free Quote
+                            </button>
+                        </div> 
                         
                     </div>
 
@@ -609,14 +608,13 @@
                         </div>
                             <div class="flex flex-col fixed bottom-0 w-full p-2 bg-primary">
                                 
-                                <div onclick="postCtaClick('call')" class="w-full sm:w-auto">
-                                    <a
-                                        target = "_blank"
-                                        href="tel:+15743123618"
-                                        class="cta_call_conversion relative block w-full px-5 py-3 whitespace-nowrap font-medium text-center rounded-md bg-secondary focus:outline-none focus:ring focus:z-10 text-white hover:bg-gray-100 hover:text-gray-900 my-2"
-                                        >
-                                        Book Now
-                                    </a>
+                                <div onclick="postCtaClick('text')" class="w-full sm:w-auto">
+                                    <button
+                                    @click="contactModalOpen = true"
+                                    class="relative block w-full px-5 py-3 whitespace-nowrap font-medium text-center rounded-md bg-secondary focus:outline-none focus:ring focus:z-10 text-white hover:bg-gray-100 hover:text-gray-900 my-2"
+                                    >
+                                        Get a Free Quote
+                                    </button>
                                 </div>
                                 
 
@@ -832,15 +830,15 @@
                                 </div>
                                 <div class="w-full mt-5 sm:mt-8 sm:flex sm:justify-center">
                                     
-                                    <div onclick="postCtaClick('call')" class="w-full sm:w-auto mr-4 cta_text_button">
-                                        <a
-                                            target = "_blank" 
-                                            href="tel:+15743123618"
-                                            class="cta_call_conversion flex justify-center w-full relative rounded p-3 sm:px-10 sm:py-4 overflow-hidden group bg-secondary relative hover:bg-gradient-to-r hover:from-secondary-lighter hover:to-secondary-darker hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300">
+                                    <div onclick="postCtaClick('text')" class="w-full sm:w-auto mr-4 cta_text_button">
+                                        <button 
+                                            @click="contactModalOpen = true"
+                                            class="flex justify-center w-full relative rounded p-3 sm:px-10 sm:py-4 overflow-hidden group bg-secondary relative hover:bg-gradient-to-r hover:from-secondary-lighter hover:to-secondary-darker hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300"
+                                        >
                                             <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-                                            <span class="relative">Book Now</span>
-                                        </a>
-                                    </div>
+                                            <span class="relative">Get a Free Quote</span>
+                                        </button>
+                                    </div> 
                                     
                                         
                                     
@@ -2873,7 +2871,7 @@ observer.observe(target)
                                     <div class="flex flex-col space-y-2">
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="990046" value="Carbon Window Tint" id="contact-service-990046" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="990116" value="Carbon Window Tint" id="contact-service-990116" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Carbon Window Tint
@@ -2881,7 +2879,7 @@ observer.observe(target)
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="990047" value="Ceramic window tint" id="contact-service-990047" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="990117" value="Ceramic window tint" id="contact-service-990117" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Ceramic window tint
@@ -2889,7 +2887,7 @@ observer.observe(target)
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="990048" value="Commercial Window Tint" id="contact-service-990048" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="990118" value="Commercial Window Tint" id="contact-service-990118" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Commercial Window Tint
@@ -2897,7 +2895,7 @@ observer.observe(target)
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="990049" value="Residential window tint" id="contact-service-990049" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="990119" value="Residential window tint" id="contact-service-990119" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Residential window tint
@@ -2974,49 +2972,49 @@ observer.observe(target)
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-990046"
-                                        name="990046"
+                                        id="contact-service-990116"
+                                        name="990116"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Carbon Window Tint"
                                     />
-                                    <label for="contact-service-990046" class="ml-3 text-sm font-normal text-gray-700">Carbon Window Tint</label>
+                                    <label for="contact-service-990116" class="ml-3 text-sm font-normal text-gray-700">Carbon Window Tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-990047"
-                                        name="990047"
+                                        id="contact-service-990117"
+                                        name="990117"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Ceramic window tint"
                                     />
-                                    <label for="contact-service-990047" class="ml-3 text-sm font-normal text-gray-700">Ceramic window tint</label>
+                                    <label for="contact-service-990117" class="ml-3 text-sm font-normal text-gray-700">Ceramic window tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-990048"
-                                        name="990048"
+                                        id="contact-service-990118"
+                                        name="990118"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Commercial Window Tint"
                                     />
-                                    <label for="contact-service-990048" class="ml-3 text-sm font-normal text-gray-700">Commercial Window Tint</label>
+                                    <label for="contact-service-990118" class="ml-3 text-sm font-normal text-gray-700">Commercial Window Tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-990049"
-                                        name="990049"
+                                        id="contact-service-990119"
+                                        name="990119"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Residential window tint"
                                     />
-                                    <label for="contact-service-990049" class="ml-3 text-sm font-normal text-gray-700">Residential window tint</label>
+                                    <label for="contact-service-990119" class="ml-3 text-sm font-normal text-gray-700">Residential window tint</label>
                                 </div>
                             
                                 
@@ -3269,15 +3267,15 @@ observer.observe(target)
                 </h2>
                 <div class="w-full mt-5 sm:mt-8 sm:flex sm:justify-center">
                     
-                    <div onclick="postCtaClick('call')" class="w-full sm:w-auto mr-4 cta_text_button">
-                        <a
-                            target = "_blank" 
-                            href="tel:+15743123618"
-                            class="cta_call_conversion flex justify-center w-full relative rounded p-3 sm:px-10 sm:py-4 overflow-hidden group bg-secondary relative hover:bg-gradient-to-r hover:from-secondary-lighter hover:to-secondary-darker hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300">
+                    <div onclick="postCtaClick('text')" class="w-full sm:w-auto mr-4 cta_text_button">
+                        <button 
+                            @click="contactModalOpen = true"
+                            class="flex justify-center w-full relative rounded p-3 sm:px-10 sm:py-4 overflow-hidden group bg-secondary relative hover:bg-gradient-to-r hover:from-secondary-lighter hover:to-secondary-darker hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300"
+                        >
                             <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-                            <span class="relative">Book Now</span>
-                        </a>
-                    </div>
+                            <span class="relative">Get a Free Quote</span>
+                        </button>
+                    </div> 
                     
                         
                     
