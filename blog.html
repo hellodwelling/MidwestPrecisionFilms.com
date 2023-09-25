@@ -416,6 +416,26 @@
 
                             </div>
                         
+                            <div
+                                class="relative flex items-center"
+                                x-trap.inert="desktopOpen"
+                                x-data="{ desktopOpen: false }"
+                                @keydown.escape.stop="desktopOpen = false"
+                                @click.away="desktopOpen = false"
+                            >
+                                
+                                    <a
+                                        href=" blog "
+                                        class=" border-secondary hover:border-gray-300    hover:border-gray-300 hover:text-gray-700  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  border-b-2  focus:outline-none focus:ring-0 focus:ring-offset-0 uppercase mix-blend-difference"
+                                        :class="{ 'text-primary': true }"
+                                    >
+                                        Blog
+                                    </a>
+                                
+                                
+
+                            </div>
+                        
                         
 
                     </div>
@@ -636,6 +656,17 @@
                                             href=" reviews "
                                             class="text-gray-500 block px-3 py-2 text-base font-medium rounded-md border-secondary transition uppercase"
                                             >Reviews</a
+                                        >
+                                    
+                                    
+                                </div>
+                            
+                                <div x-trap.inert="openMenu == 'navitem_7'">
+                                    
+                                        <a
+                                            href=" blog "
+                                            class="text-gray-500 block px-3 py-2 text-base font-medium rounded-md border-secondary transition uppercase"
+                                            >Blog</a
                                         >
                                     
                                     
@@ -866,6 +897,11 @@
         
             
                 
+                
+            
+        
+            
+                
 
                     
                         <section>
@@ -878,6 +914,27 @@
             </h1>
 
             <div class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
+                
+                    <div class="flex flex-col bg-white rounded-lg shadow-lg p-8 items-start">
+                        <div class="text-left text-sm text-gray-500">Sep 25, 2023</div>
+                        <div class="text-left text-xl text-gray-900 font-semibold mt-2">
+                            <a
+                                class="text-left text-xl text-gray-900 font-semibold"
+                                href="blog-1221"
+                            >
+                                Cracking the Code: Midwest Precision Films Reveals the Secrets of Optimal Auto Tinting for Every Vehicle Owner
+                            </a>
+                        </div>
+                        <div class="text-left text-base text-gray-500 line-clamp-5 mt-4">Are you tired of experiencing the uncomfortable glare of the scorching sun while driving? Or perhaps you&#x27;re concerned about protecting the interior of your vehicle from harmful UV rays? Look no fu…</div>
+                        <div class="text-left mt-4 text-primary">
+                            <a
+                                class="text-primary font-semibold"
+                                href="blog-1221"
+                            >
+                                Read full post
+                            </a>
+                        </div>
+                    </div>
                 
             </div>
 
@@ -1011,7 +1068,7 @@
                                     <div class="flex flex-col space-y-2">
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009556" value="Carbon Window Tint" id="contact-service-1009556" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031904" value="Carbon Window Tint" id="contact-service-1031904" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Carbon Window Tint
@@ -1019,7 +1076,7 @@
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009557" value="Ceramic window tint" id="contact-service-1009557" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031905" value="Ceramic window tint" id="contact-service-1031905" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Ceramic window tint
@@ -1027,7 +1084,7 @@
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009558" value="Commercial Window Tint" id="contact-service-1009558" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031906" value="Commercial Window Tint" id="contact-service-1031906" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Commercial Window Tint
@@ -1035,7 +1092,7 @@
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009559" value="Residential window tint" id="contact-service-1009559" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031907" value="Residential window tint" id="contact-service-1031907" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Residential window tint
@@ -1043,7 +1100,7 @@
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009560" value="Paint Protection Film (PPF)" id="contact-service-1009560" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031908" value="Paint Protection Film (PPF)" id="contact-service-1031908" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Paint Protection Film (PPF)
@@ -1051,7 +1108,7 @@
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009561" value="Tesla window tint" id="contact-service-1009561" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031909" value="Tesla window tint" id="contact-service-1031909" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Tesla window tint
@@ -1059,7 +1116,7 @@
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009562" value="Tractor window tint" id="contact-service-1009562" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031910" value="Tractor window tint" id="contact-service-1031910" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Tractor window tint
@@ -1136,85 +1193,85 @@
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009556"
-                                        name="1009556"
+                                        id="contact-service-1031904"
+                                        name="1031904"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Carbon Window Tint"
                                     />
-                                    <label for="contact-service-1009556" class="ml-3 text-sm font-normal text-gray-700">Carbon Window Tint</label>
+                                    <label for="contact-service-1031904" class="ml-3 text-sm font-normal text-gray-700">Carbon Window Tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009557"
-                                        name="1009557"
+                                        id="contact-service-1031905"
+                                        name="1031905"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Ceramic window tint"
                                     />
-                                    <label for="contact-service-1009557" class="ml-3 text-sm font-normal text-gray-700">Ceramic window tint</label>
+                                    <label for="contact-service-1031905" class="ml-3 text-sm font-normal text-gray-700">Ceramic window tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009558"
-                                        name="1009558"
+                                        id="contact-service-1031906"
+                                        name="1031906"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Commercial Window Tint"
                                     />
-                                    <label for="contact-service-1009558" class="ml-3 text-sm font-normal text-gray-700">Commercial Window Tint</label>
+                                    <label for="contact-service-1031906" class="ml-3 text-sm font-normal text-gray-700">Commercial Window Tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009559"
-                                        name="1009559"
+                                        id="contact-service-1031907"
+                                        name="1031907"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Residential window tint"
                                     />
-                                    <label for="contact-service-1009559" class="ml-3 text-sm font-normal text-gray-700">Residential window tint</label>
+                                    <label for="contact-service-1031907" class="ml-3 text-sm font-normal text-gray-700">Residential window tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009560"
-                                        name="1009560"
+                                        id="contact-service-1031908"
+                                        name="1031908"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Paint Protection Film (PPF)"
                                     />
-                                    <label for="contact-service-1009560" class="ml-3 text-sm font-normal text-gray-700">Paint Protection Film (PPF)</label>
+                                    <label for="contact-service-1031908" class="ml-3 text-sm font-normal text-gray-700">Paint Protection Film (PPF)</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009561"
-                                        name="1009561"
+                                        id="contact-service-1031909"
+                                        name="1031909"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Tesla window tint"
                                     />
-                                    <label for="contact-service-1009561" class="ml-3 text-sm font-normal text-gray-700">Tesla window tint</label>
+                                    <label for="contact-service-1031909" class="ml-3 text-sm font-normal text-gray-700">Tesla window tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009562"
-                                        name="1009562"
+                                        id="contact-service-1031910"
+                                        name="1031910"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Tractor window tint"
                                     />
-                                    <label for="contact-service-1009562" class="ml-3 text-sm font-normal text-gray-700">Tractor window tint</label>
+                                    <label for="contact-service-1031910" class="ml-3 text-sm font-normal text-gray-700">Tractor window tint</label>
                                 </div>
                             
                                 
@@ -1386,11 +1443,6 @@
 
                         
                     
-                
-                
-            
-        
-            
                 
                 
             
