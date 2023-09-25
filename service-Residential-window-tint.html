@@ -416,6 +416,26 @@
 
                             </div>
                         
+                            <div
+                                class="relative flex items-center"
+                                x-trap.inert="desktopOpen"
+                                x-data="{ desktopOpen: false }"
+                                @keydown.escape.stop="desktopOpen = false"
+                                @click.away="desktopOpen = false"
+                            >
+                                
+                                    <a
+                                        href=" blog "
+                                        class=" border-secondary hover:border-gray-300    hover:border-gray-300 hover:text-gray-700  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  focus:outline-none focus:ring-0 focus:ring-offset-0 uppercase mix-blend-difference"
+                                        :class="{ 'text-primary': true }"
+                                    >
+                                        Blog
+                                    </a>
+                                
+                                
+
+                            </div>
+                        
                         
 
                     </div>
@@ -636,6 +656,17 @@
                                             href=" reviews "
                                             class="text-gray-500 block px-3 py-2 text-base font-medium rounded-md border-secondary transition uppercase"
                                             >Reviews</a
+                                        >
+                                    
+                                    
+                                </div>
+                            
+                                <div x-trap.inert="openMenu == 'navitem_7'">
+                                    
+                                        <a
+                                            href=" blog "
+                                            class="text-gray-500 block px-3 py-2 text-base font-medium rounded-md border-secondary transition uppercase"
+                                            >Blog</a
                                         >
                                     
                                     
@@ -1478,14 +1509,14 @@
                                         />
                                     </svg>
                                     <p lorem="1" class="relative text-lg font-medium">
-                                        Highly recommend! Very affordable,professional, and informative about services provided. This is the go to shop for my tint needs. You will NOT be disappointed!
+                                        I’ve taken a few of my cars here to get them tinted, the work is professional, clean, fast, and well priced they have good knowledge of different tints for heat protection and privacy. I will continue to take my cars here for tint service.
                                     </p>
                                 </div>
                                 
                                 <footer class="flex items-center justify-between mt-8 space-x-4">
                                     <div>
                                         
-                                            <span class="block font-medium text-primary">Aline Chaparro</span>
+                                            <span class="block font-medium text-primary">Ruben Arizaga</span>
                                         
                                         <span class="block font-medium">Home Owner</span>
                                     </div>
@@ -1572,14 +1603,14 @@
                                         />
                                     </svg>
                                     <p lorem="1" class="relative text-lg font-medium">
-                                        I’ve taken a few of my cars here to get them tinted, the work is professional, clean, fast, and well priced they have good knowledge of different tints for heat protection and privacy. I will continue to take my cars here for tint service.
+                                        Professional customer service. Quickly scheduled me in and did a great job of explaining the differences in film. Great work on my vehicle tint!
                                     </p>
                                 </div>
                                 
                                 <footer class="flex items-center justify-between mt-8 space-x-4">
                                     <div>
                                         
-                                            <span class="block font-medium text-primary">Ruben Arizaga</span>
+                                            <span class="block font-medium text-primary">Nancy Garcia</span>
                                         
                                         <span class="block font-medium">Home Owner</span>
                                     </div>
@@ -1670,14 +1701,14 @@
                                         />
                                     </svg>
                                     <p lorem="1" class="relative text-lg font-medium">
-                                        Professional customer service. Quickly scheduled me in and did a great job of explaining the differences in film. Great work on my vehicle tint!
+                                        Highly recommend! Very affordable,professional, and informative about services provided. This is the go to shop for my tint needs. You will NOT be disappointed!
                                     </p>
                                 </div>
                                 
                                 <footer class="flex items-center justify-between mt-8 space-x-4">
                                     <div>
                                         
-                                            <span class="block font-medium text-primary">Nancy Garcia</span>
+                                            <span class="block font-medium text-primary">Aline Chaparro</span>
                                         
                                         <span class="block font-medium">Home Owner</span>
                                     </div>
@@ -1954,14 +1985,14 @@ Before and after
                                         />
                                     </svg>
                                     <p lorem="1" class="relative text-lg font-medium">
-                                        Very quick and easy! Good communication and overall service. Highly recommend if you’re looking for high quality vehicle tinting.
+                                        Very professional and great service overall! Also very flexible with scheduling, 100% recommend!
                                     </p>
                                 </div>
                                 
                                 <footer class="flex items-center justify-between mt-8 space-x-4">
                                     <div>
                                         
-                                            <span class="block font-medium text-primary">Noah Kauffman</span>
+                                            <span class="block font-medium text-primary">karina viveros</span>
                                         
                                         <span class="block font-medium">Home Owner</span>
                                     </div>
@@ -2048,14 +2079,14 @@ Before and after
                                         />
                                     </svg>
                                     <p lorem="1" class="relative text-lg font-medium">
-                                        Very professional and great service overall! Also very flexible with scheduling, 100% recommend!
+                                        Very quick and easy! Good communication and overall service. Highly recommend if you’re looking for high quality vehicle tinting.
                                     </p>
                                 </div>
                                 
                                 <footer class="flex items-center justify-between mt-8 space-x-4">
                                     <div>
                                         
-                                            <span class="block font-medium text-primary">karina viveros</span>
+                                            <span class="block font-medium text-primary">Noah Kauffman</span>
                                         
                                         <span class="block font-medium">Home Owner</span>
                                     </div>
@@ -2619,14 +2650,14 @@ Here’s the work they have done for me personally. If I could give more then 5 
                                         />
                                     </svg>
                                     <p lorem="1" class="relative text-lg font-medium">
-                                        Awesome place. Got me in the same day I called. Did a excellent job on my Jeep Wrangler. Nice guys and great job. Will go there again. Thanks!
+                                        Midwest precision films is the best tint shop around. They have great service and are professional. Recommended 100%
                                     </p>
                                 </div>
                                 
                                 <footer class="flex items-center justify-between mt-8 space-x-4">
                                     <div>
                                         
-                                            <span class="block font-medium text-primary">Dave Butler</span>
+                                            <span class="block font-medium text-primary">Denise Moreno</span>
                                         
                                         <span class="block font-medium">Home Owner</span>
                                     </div>
@@ -2713,14 +2744,14 @@ Here’s the work they have done for me personally. If I could give more then 5 
                                         />
                                     </svg>
                                     <p lorem="1" class="relative text-lg font-medium">
-                                        Midwest precision films is the best tint shop around. They have great service and are professional. Recommended 100%
+                                        Awesome place. Got me in the same day I called. Did a excellent job on my Jeep Wrangler. Nice guys and great job. Will go there again. Thanks!
                                     </p>
                                 </div>
                                 
                                 <footer class="flex items-center justify-between mt-8 space-x-4">
                                     <div>
                                         
-                                            <span class="block font-medium text-primary">Denise Moreno</span>
+                                            <span class="block font-medium text-primary">Dave Butler</span>
                                         
                                         <span class="block font-medium">Home Owner</span>
                                     </div>
@@ -3017,7 +3048,7 @@ observer.observe(target)
                                     <div class="flex flex-col space-y-2">
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009556" value="Carbon Window Tint" id="contact-service-1009556" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031794" value="Carbon Window Tint" id="contact-service-1031794" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Carbon Window Tint
@@ -3025,7 +3056,7 @@ observer.observe(target)
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009557" value="Ceramic window tint" id="contact-service-1009557" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031795" value="Ceramic window tint" id="contact-service-1031795" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Ceramic window tint
@@ -3033,7 +3064,7 @@ observer.observe(target)
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009558" value="Commercial Window Tint" id="contact-service-1009558" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031796" value="Commercial Window Tint" id="contact-service-1031796" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Commercial Window Tint
@@ -3041,7 +3072,7 @@ observer.observe(target)
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009559" value="Residential window tint" id="contact-service-1009559" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031797" value="Residential window tint" id="contact-service-1031797" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Residential window tint
@@ -3049,7 +3080,7 @@ observer.observe(target)
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009560" value="Paint Protection Film (PPF)" id="contact-service-1009560" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031798" value="Paint Protection Film (PPF)" id="contact-service-1031798" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Paint Protection Film (PPF)
@@ -3057,7 +3088,7 @@ observer.observe(target)
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009561" value="Tesla window tint" id="contact-service-1009561" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031799" value="Tesla window tint" id="contact-service-1031799" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Tesla window tint
@@ -3065,7 +3096,7 @@ observer.observe(target)
                                         </div>
                                         
                                         <div class="flex items-center">
-                                            <input type="checkbox" name="1009562" value="Tractor window tint" id="contact-service-1009562" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                            <input type="checkbox" name="1031800" value="Tractor window tint" id="contact-service-1031800" class="mt-0.5 items-center w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                             />
                                             <span class="ml-3 items-start text-gray-600">
                                                 Tractor window tint
@@ -3142,85 +3173,85 @@ observer.observe(target)
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009556"
-                                        name="1009556"
+                                        id="contact-service-1031794"
+                                        name="1031794"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Carbon Window Tint"
                                     />
-                                    <label for="contact-service-1009556" class="ml-3 text-sm font-normal text-gray-700">Carbon Window Tint</label>
+                                    <label for="contact-service-1031794" class="ml-3 text-sm font-normal text-gray-700">Carbon Window Tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009557"
-                                        name="1009557"
+                                        id="contact-service-1031795"
+                                        name="1031795"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Ceramic window tint"
                                     />
-                                    <label for="contact-service-1009557" class="ml-3 text-sm font-normal text-gray-700">Ceramic window tint</label>
+                                    <label for="contact-service-1031795" class="ml-3 text-sm font-normal text-gray-700">Ceramic window tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009558"
-                                        name="1009558"
+                                        id="contact-service-1031796"
+                                        name="1031796"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Commercial Window Tint"
                                     />
-                                    <label for="contact-service-1009558" class="ml-3 text-sm font-normal text-gray-700">Commercial Window Tint</label>
+                                    <label for="contact-service-1031796" class="ml-3 text-sm font-normal text-gray-700">Commercial Window Tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009559"
-                                        name="1009559"
+                                        id="contact-service-1031797"
+                                        name="1031797"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Residential window tint"
                                     />
-                                    <label for="contact-service-1009559" class="ml-3 text-sm font-normal text-gray-700">Residential window tint</label>
+                                    <label for="contact-service-1031797" class="ml-3 text-sm font-normal text-gray-700">Residential window tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009560"
-                                        name="1009560"
+                                        id="contact-service-1031798"
+                                        name="1031798"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Paint Protection Film (PPF)"
                                     />
-                                    <label for="contact-service-1009560" class="ml-3 text-sm font-normal text-gray-700">Paint Protection Film (PPF)</label>
+                                    <label for="contact-service-1031798" class="ml-3 text-sm font-normal text-gray-700">Paint Protection Film (PPF)</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009561"
-                                        name="1009561"
+                                        id="contact-service-1031799"
+                                        name="1031799"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Tesla window tint"
                                     />
-                                    <label for="contact-service-1009561" class="ml-3 text-sm font-normal text-gray-700">Tesla window tint</label>
+                                    <label for="contact-service-1031799" class="ml-3 text-sm font-normal text-gray-700">Tesla window tint</label>
                                 </div>
                             
                                 
                                 <div class="flex items-center">
                                     <input
-                                        id="contact-service-1009562"
-                                        name="1009562"
+                                        id="contact-service-1031800"
+                                        name="1031800"
                                         type="checkbox"
                                         class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         value="Tractor window tint"
                                     />
-                                    <label for="contact-service-1009562" class="ml-3 text-sm font-normal text-gray-700">Tractor window tint</label>
+                                    <label for="contact-service-1031800" class="ml-3 text-sm font-normal text-gray-700">Tractor window tint</label>
                                 </div>
                             
                                 
@@ -3445,13 +3476,13 @@ observer.observe(target)
         
             
                 
-
-                    
-                
                 
             
         
             
+                
+
+                    
                 
                 
             
