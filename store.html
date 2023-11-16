@@ -122,6 +122,8 @@
     @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
     :class="{'h-32 w-screen': !scrolledFromTop, 'h-16 w-screen': scrolledFromTop}"
     class="w-screen fixed top-0 inset-x-0 z-50"
+    data-heap-component-name="navigation"
+    data-heap-version="v2.1"
 >
 
     <div
@@ -938,7 +940,10 @@
                     
                          
     
-        <section class="flex final-cta-image two-thirds-screen-height w-full bg-center bg-cover custom_text_color text-white">
+        <section
+                data-heap-component-name="final-cta"
+                data-heap-version="v2.1"
+                class="flex final-cta-image two-thirds-screen-height w-full bg-center bg-cover custom_text_color text-white">
                 <div style="--tw-bg-opacity:75%;" class="flex flex-col items-center justify-center px-6 py-12 text-center sm:px-6 lg:py-16 lg:px-8 w-full bg-primary">
                 <h2 class="flex flex-col items-center text-3xl font-extrabold sm:text-6xl">
                     <span class="flex">Ready to get started?</span>
@@ -972,7 +977,12 @@
             
 
 
-<footer class="bg-primary" aria-labelledby="footer-heading">
+<footer
+        class="bg-primary"
+        aria-labelledby="footer-heading"
+        data-heap-component-name="footer"
+        data-heap-version="v2.1"
+>
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:pt-16 lg:pb-10 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
