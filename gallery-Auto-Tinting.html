@@ -122,6 +122,8 @@
     @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
     :class="{'h-32 w-screen': !scrolledFromTop, 'h-16 w-screen': scrolledFromTop}"
     class="w-screen fixed top-0 inset-x-0 z-50"
+    data-heap-component-name="navigation"
+    data-heap-version="v2.1"
 >
 
     <div
@@ -883,6 +885,8 @@
 
     <div
         class="relative flex w-full overflow-x-hidden custom_text_color text-white"
+        data-heap-component-name="gallery-page"
+        data-heap-version="v2.1"
     >
         
               
@@ -948,6 +952,8 @@
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
     }"
+    data-heap-component-name="gallery-with-modal"
+    data-heap-version="v2.1"
 >
     <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
         
@@ -1813,6 +1819,8 @@
             class="fixed inset-0 z-50"
             x-trap.noscroll.inert="contactModalOpen"
             id="send-text-modal"
+            data-heap-component-name="send-text-modal"
+	        data-heap-version="v2.1"
     >
         <div
                 x-show="contactModalOpen"
@@ -2240,7 +2248,10 @@
   observer2.observe(document, { childList: true, subtree: true });
 </script>
                                         <template x-teleport="body">
-    <div x-show="reviewModalOpen" @keydown.escape.prevent.stop="reviewModalOpen = false" role="dialog" aria-modal="true" x-id="['modal-title']" :aria-labelledby="$id('modal-title')" class="fixed inset-0 z-50 pt-8 pb-20" x-trap.noscroll.inert="reviewModalOpen">
+    <div x-show="reviewModalOpen" @keydown.escape.prevent.stop="reviewModalOpen = false" role="dialog" aria-modal="true" x-id="['modal-title']" :aria-labelledby="$id('modal-title')" class="fixed inset-0 z-50 pt-8 pb-20" x-trap.noscroll.inert="reviewModalOpen"
+         data-heap-component-name="leave_a_review"
+         data-heap-version="v2.1"
+    >
         <div x-show="reviewModalOpen" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" aria-hidden="true" class="fixed inset-0 bg-black bg-opacity-50"></div>
         <div
             x-show="reviewModalOpen"
@@ -2367,7 +2378,10 @@
                     
                          
     
-        <section class="flex final-cta-image two-thirds-screen-height w-full bg-center bg-cover custom_text_color text-white">
+        <section
+                data-heap-component-name="final-cta"
+                data-heap-version="v2.1"
+                class="flex final-cta-image two-thirds-screen-height w-full bg-center bg-cover custom_text_color text-white">
                 <div style="--tw-bg-opacity:75%;" class="flex flex-col items-center justify-center px-6 py-12 text-center sm:px-6 lg:py-16 lg:px-8 w-full bg-primary">
                 <h2 class="flex flex-col items-center text-3xl font-extrabold sm:text-6xl">
                     <span class="flex">Ready to get started?</span>
@@ -2401,7 +2415,12 @@
             
 
 
-<footer class="bg-primary" aria-labelledby="footer-heading">
+<footer
+        class="bg-primary"
+        aria-labelledby="footer-heading"
+        data-heap-component-name="footer"
+        data-heap-version="v2.1"
+>
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:pt-16 lg:pb-10 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
