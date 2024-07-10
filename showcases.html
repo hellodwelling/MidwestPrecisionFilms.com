@@ -579,16 +579,15 @@
                     </p>
                     <div class="w-full sm:w-auto">
                         
-                        <div onclick="postCtaClick('link')" class="w-full sm:w-auto hover:scale-110 transition duration-300 ease-in-out">
-                            <a
-                                target="_blank" rel="noopener noreferrer" 
-                                href="https://app.tintwiz.com/web/ce/lkhtwzggqrefidanyyotjjunapw9zsfy"
+                        <div onclick="postCtaClick('text')" class="w-full sm:w-auto cta_text_button hover:scale-110 transition duration-300 ease-in-out">
+                            <button
                                 :class="{'scale-100': !scrolledFromTop, 'scale-100': scrolledFromTop}"
+                                @click="contactModalOpen = true"
                                 class="inline-flex items-center justify-center w-full px-5 py-3 whitespace-nowrap text-base font-medium transition border-2 border-transparent rounded-md  text-primary-foreground focus:outline-none sm:w-auto  bg-primary hover:bg-primary-darker  focus:ring-0 focus:ring-offset-0"
                                 >
-                               Book Now
-                            </a>
-                        </div>
+                                Get a Free Quote
+                            </button>
+                        </div> 
                         
                     </div>
 
@@ -838,13 +837,13 @@
                         </div>
                             <div class="flex flex-col fixed bottom-0 w-full p-2 bg-primary">
                                 
-                                <div onclick="postCtaClick('link')" class="w-full sm:w-auto">
-                                    <a
-                                        href="https://app.tintwiz.com/web/ce/lkhtwzggqrefidanyyotjjunapw9zsfy"
-                                        class="relative block w-full px-5 py-3 whitespace-nowrap font-medium text-center rounded-md bg-secondary focus:outline-none focus:ring focus:z-10 text-white hover:bg-gray-100 hover:text-gray-900 my-2"
-                                        >
-                                        Book Now
-                                    </a>
+                                <div onclick="postCtaClick('text')" class="w-full sm:w-auto">
+                                    <button
+                                    @click="contactModalOpen = true"
+                                    class="relative block w-full px-5 py-3 whitespace-nowrap font-medium text-center rounded-md bg-secondary focus:outline-none focus:ring focus:z-10 text-white hover:bg-gray-100 hover:text-gray-900 my-2"
+                                    >
+                                        Get a Free Quote
+                                    </button>
                                 </div>
                                 
 
@@ -1168,6 +1167,7 @@
     opacity: 1;
     z-index: 1;
   }
+
   @media screen and (max-width: 800px) {
       .map-outer-container {
           height: calc(100vh - 176px);
@@ -1445,7 +1445,7 @@
             ${featuredPhoto ? (
               imgHtml
             ) : (
-              `<div style="background-color: #000000;"></div>`
+              `<img style="${classNames}" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/160x160/filters:strip_exif()/filters:no_upscale()/filters:format(webp)/media/c1b8ae9c-8742-41e3-ac15-23d0eb3f44be.png" />`
             )}
           </div>
           <svg style="bottom: -10px; left: ${isMobile ? "12px" : "29.5px"}; position: absolute;" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1554,6 +1554,7 @@
             <div class="uppercase font-normal">${showcase.project_date}</div>
           </div>
           <div style="line-height: 1.25;" class="text-lg font-bold text-primary pt-2 line-clamp-2">${showcase.title}</div>
+          <div class="text-sm font-medium text-gray-900 line-clamp-1 pt-1">${showcase.subtitle}</div>
           <div id="line-clamp-description" class="text-xs font-normal text-gray-600 line-clamp-1 pt-2">${showcase.detailed_description}</div>
           ${showcase.review_id && reviewSection}
         </div>
@@ -2010,7 +2011,7 @@
       <div class="advanced-marker cursor-pointer overflow-hidden" style="background-color: white; border: 2px solid black; border-radius: 5px; transform: translate(0px, 40px);">
         ${featuredPhoto ? (
           `${imgHtml}`
-        ) : `<div style="background-color: #000000;"></div>`}
+        ) : `<img style="${classNames}" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/160x160/filters:strip_exif()/filters:no_upscale()/filters:format(webp)/media/c1b8ae9c-8742-41e3-ac15-23d0eb3f44be.png" />`}
       </div>
       <svg style="bottom: -50px; left: 29.5px; position: absolute;" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8.80874 9.88799C8.40939 10.4371 7.59061 10.4371 7.19127 9.88799L9.61651e-07 -1.39876e-06L16 0L8.80874 9.88799Z" fill="#000000"/>
@@ -2800,15 +2801,15 @@
                 </h2>
                 <div class="w-full mt-5 sm:mt-8 sm:flex sm:justify-center">
                     
-                    <div onclick="postCtaClick('link')" class="w-full sm:w-auto mr-4 cta_text_button">
-                        <a
-                            target="_blank" rel="noopener noreferrer" 
-                            href="https://app.tintwiz.com/web/ce/lkhtwzggqrefidanyyotjjunapw9zsfy"
-                            class="flex justify-center w-full relative rounded p-3 sm:px-10 sm:py-4 overflow-hidden group bg-secondary relative hover:bg-gradient-to-r hover:from-secondary-lighter hover:to-secondary-darker hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300">
+                    <div onclick="postCtaClick('text')" class="w-full sm:w-auto mr-4 cta_text_button">
+                        <button 
+                            @click="contactModalOpen = true"
+                            class="flex justify-center w-full relative rounded p-3 sm:px-10 sm:py-4 overflow-hidden group bg-secondary relative hover:bg-gradient-to-r hover:from-secondary-lighter hover:to-secondary-darker hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300"
+                        >
                             <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                             <span class="relative">Book Now</span>
-                        </a>
-                    </div>
+                        </button>
+                    </div> 
                     
                         
                     
