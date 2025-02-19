@@ -95,7 +95,7 @@
   
   .all-photos-hero-image {
       background-color: var(--color-primary-foreground);
-      background-image: url("https://d3p2r6ofnvoe67.cloudfront.net/media/d99fe2d3-b5db-4970-81c3-a3d291129808.jpeg");
+      background-image: url("https://d3p2r6ofnvoe67.cloudfront.net/media/0716d63f-b593-4cf3-abe4-4fb6830f8c71.jpeg");
       background-size: cover;
   }
   
@@ -1082,7 +1082,7 @@
               
             <div
                 class="flex gallery-hero-image screen-height-minus-navbar w-full bg-center bg-cover bg-fixed"
-                style="background-image: url('https://landing-page-app-hero-images.s3.amazonaws.com/media/d46d8133-60b6-4f1e-afe2-05729bee3339.png')"
+                style="background-image: url('https://landing-page-app-hero-images.s3.amazonaws.com/media/0716d63f-b593-4cf3-abe4-4fb6830f8c71.jpeg')"
             >
                 <main
                     style="--tw-bg-opacity:75%;"
@@ -1139,7 +1139,7 @@
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 18,
+        amountOfImages: 21,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1167,7 +1167,7 @@
                             
                                 <div class="aspect-w-3 aspect-h-2">
                                     
-                                        <img class="object-cover rounded-md shadow-lg hover:scale-110 transition duration-300 ease-in-out lazy"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/d46d8133-60b6-4f1e-afe2-05729bee3339.png"  alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy" decoding="async"/>
+                                        <img class="object-cover rounded-md shadow-lg hover:scale-110 transition duration-300 ease-in-out lazy"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/0716d63f-b593-4cf3-abe4-4fb6830f8c71.jpeg"  alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy" decoding="async"/>
                                     
                                 </div>
 
@@ -1191,7 +1191,7 @@
                             
                                 <div class="aspect-w-3 aspect-h-2">
                                     
-                                        <img class="object-cover rounded-md shadow-lg hover:scale-110 transition duration-300 ease-in-out lazy"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/51797f9c-d1fc-4e3c-afba-175ef0b7c5fc.png"  alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy" decoding="async"/>
+                                        <img class="object-cover rounded-md shadow-lg hover:scale-110 transition duration-300 ease-in-out lazy"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/7a34af84-e368-45bb-96c4-5e410be9f45e.jpeg"  alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy" decoding="async"/>
                                     
                                 </div>
 
@@ -1215,7 +1215,7 @@
                             
                                 <div class="aspect-w-3 aspect-h-2">
                                     
-                                        <img class="object-cover rounded-md shadow-lg hover:scale-110 transition duration-300 ease-in-out lazy"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/536f3024-3eba-45e5-b257-3c0e9d6cac01.png"  alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy" decoding="async"/>
+                                        <img class="object-cover rounded-md shadow-lg hover:scale-110 transition duration-300 ease-in-out lazy"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/8315903e-2670-4d5f-9e98-d3ef253bf20e.jpeg"  alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy" decoding="async"/>
                                     
                                 </div>
 
@@ -1575,7 +1575,79 @@
                             
                                 <div class="aspect-w-3 aspect-h-2">
                                     
+                                        <img class="object-cover rounded-md shadow-lg hover:scale-110 transition duration-300 ease-in-out lazy"  data-src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/d46d8133-60b6-4f1e-afe2-05729bee3339.png"  alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy" decoding="async"/>
+                                    
+                                </div>
+
+                                <div class="space-y-1 text-lg font-medium leading-6">
+                                    <p class="line-clamp-3"></p>
+                                    <h3 class="text-primary"></h3>
+                                </div>
+                            
+                        </button>
+                    </div>
+                </li>
+            
+        
+            
+                <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true">
+                    <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                        <button
+                            @click="activeImage = 18; galleryModalOpen = true"
+                            class="photo-tile block w-full h-full text-left rounded focus:outline-none focus-visible:ring focus:ring-0 focus:ring-offset-0"
+                        >
+                            
+                                <div class="aspect-w-3 aspect-h-2">
+                                    
                                         <img class="object-cover rounded-md shadow-lg hover:scale-110 transition duration-300 ease-in-out lazy"  data-src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/7559071a-8766-40c9-8cd2-04b35ba55b3e.jpeg"  alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy" decoding="async"/>
+                                    
+                                </div>
+
+                                <div class="space-y-1 text-lg font-medium leading-6">
+                                    <p class="line-clamp-3"></p>
+                                    <h3 class="text-primary"></h3>
+                                </div>
+                            
+                        </button>
+                    </div>
+                </li>
+            
+        
+            
+                <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true">
+                    <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                        <button
+                            @click="activeImage = 19; galleryModalOpen = true"
+                            class="photo-tile block w-full h-full text-left rounded focus:outline-none focus-visible:ring focus:ring-0 focus:ring-offset-0"
+                        >
+                            
+                                <div class="aspect-w-3 aspect-h-2">
+                                    
+                                        <img class="object-cover rounded-md shadow-lg hover:scale-110 transition duration-300 ease-in-out lazy"  data-src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/51797f9c-d1fc-4e3c-afba-175ef0b7c5fc.png"  alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy" decoding="async"/>
+                                    
+                                </div>
+
+                                <div class="space-y-1 text-lg font-medium leading-6">
+                                    <p class="line-clamp-3"></p>
+                                    <h3 class="text-primary"></h3>
+                                </div>
+                            
+                        </button>
+                    </div>
+                </li>
+            
+        
+            
+                <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true">
+                    <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                        <button
+                            @click="activeImage = 20; galleryModalOpen = true"
+                            class="photo-tile block w-full h-full text-left rounded focus:outline-none focus-visible:ring focus:ring-0 focus:ring-offset-0"
+                        >
+                            
+                                <div class="aspect-w-3 aspect-h-2">
+                                    
+                                        <img class="object-cover rounded-md shadow-lg hover:scale-110 transition duration-300 ease-in-out lazy"  data-src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/536f3024-3eba-45e5-b257-3c0e9d6cac01.png"  alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy" decoding="async"/>
                                     
                                 </div>
 
@@ -1635,7 +1707,7 @@
                                 <li class="flex flex-col" x-show="activeImage === 0">
                                     
                                         
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/d46d8133-60b6-4f1e-afe2-05729bee3339.png" alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/0716d63f-b593-4cf3-abe4-4fb6830f8c71.jpeg" alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     
@@ -1644,7 +1716,7 @@
                                 <li class="flex flex-col" x-show="activeImage === 1">
                                     
                                         
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/51797f9c-d1fc-4e3c-afba-175ef0b7c5fc.png" alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/7a34af84-e368-45bb-96c4-5e410be9f45e.jpeg" alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     
@@ -1653,7 +1725,7 @@
                                 <li class="flex flex-col" x-show="activeImage === 2">
                                     
                                         
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/536f3024-3eba-45e5-b257-3c0e9d6cac01.png" alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/8315903e-2670-4d5f-9e98-d3ef253bf20e.jpeg" alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     
@@ -1788,7 +1860,34 @@
                                 <li class="flex flex-col" x-show="activeImage === 17">
                                     
                                         
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/d46d8133-60b6-4f1e-afe2-05729bee3339.png" alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    
+                                </li>
+                                
+                                <li class="flex flex-col" x-show="activeImage === 18">
+                                    
+                                        
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/7559071a-8766-40c9-8cd2-04b35ba55b3e.jpeg" alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    
+                                </li>
+                                
+                                <li class="flex flex-col" x-show="activeImage === 19">
+                                    
+                                        
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/51797f9c-d1fc-4e3c-afba-175ef0b7c5fc.png" alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    
+                                </li>
+                                
+                                <li class="flex flex-col" x-show="activeImage === 20">
+                                    
+                                        
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/536f3024-3eba-45e5-b257-3c0e9d6cac01.png" alt="Auto Tinting for Midwest Precision Films in Goshen, IN" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     
