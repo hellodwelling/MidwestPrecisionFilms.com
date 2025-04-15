@@ -185,7 +185,7 @@
         scrolledFromTop: false,
         contactChatOpen: false,
         active: 0,
-        showAnnouncement: false,
+        showAnnouncement: true,
         customNavTransparent:  false ,
         showMessage: false,
         navbarHeight: '',
@@ -218,6 +218,32 @@
     data-heap-component-name="navigation"
     data-heap-version="v3"
 >
+
+    <div
+        x-ref="announcement"
+        x-show="showAnnouncement"
+        x-transition:leave="transition-all duration-700"
+        x-transition:leave-start="max-h-12"
+        x-transition:leave-end="max-h-0"
+        class="overflow-hidden"
+    >
+        <div style="background-color:#f8e72a" class="flex p-4 space-x-3 bg-green-50 text-sm font-medium text-green-500 align-center">
+            
+                <span style="color:#c01902;" class="flex items-center">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20">
+  <path d="M19.5 6h-15v9h15V6z" />
+  <path fill-rule="evenodd" d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v11.25C1.5 17.16 2.34 18 3.375 18H9.75v1.5H6A.75.75 0 006 21h12a.75.75 0 000-1.5h-3.75V18h6.375c1.035 0 1.875-.84 1.875-1.875V4.875C22.5 3.839 21.66 3 20.625 3H3.375zm0 13.5h17.25a.375.375 0 00.375-.375V4.875a.375.375 0 00-.375-.375H3.375A.375.375 0 003 4.875v11.25c0 .207.168.375.375.375z" clip-rule="evenodd" />
+</svg>
+                </span>
+            
+            <p class="text-green-800 grow" style="color:#000000;">For all business inquiries please contact us at tanoperez10@gmail.com. Thank you in advance! </p>
+            <button @click="showAnnouncement = false" style="color:#c01902;">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20" class="justify-self-end cursor-pointer hover:scale-125">
+  <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+</svg>
+            </button>
+        </div>
+    </div>
 
     <div
         x-data="{ navOpen: false, scrolledFromTop: false, mobileOpen: false }"
@@ -1678,7 +1704,7 @@
                                                                     <div class="relative pt-2">
                                                                         
                                                                             <span class="review-body relative text-lg font-medium line-clamp-7">
-                                                                                Very quick and easy! Good communication and overall service. Highly recommend if you’re looking for high quality vehicle tinting.
+                                                                                Professional customer service. Quickly scheduled me in and did a great job of explaining the differences in film. Great work on my vehicle tint!
                                                                             </span>
                                                                             <span style="display: none;" class="text-secondary font-bold inline uppercase cursor-pointer">See more</span>
                                                                             <span style="display: none;" class="text-secondary font-bold inline uppercase cursor-pointer">See less</span>
@@ -1687,7 +1713,7 @@
                                                                     <footer class="flex items-center justify-between mt-8 space-x-4">
                                                                         <div>
                                                                             
-                                                                                <span class="block font-medium uppercase text-gray-900">Noah Kauffman</span>
+                                                                                <span class="block font-medium uppercase text-gray-900">Nancy Garcia</span>
                                                                             
                                                                             <div class="mt-1 bg-gray-300 text-primary py-1 px-3 font-black text-lg uppercase">Carbon Window Tint</div>
                                                                         </div>
@@ -5529,7 +5555,7 @@ Here’s the work they have done for me personally. If I could give more then 5 
                                                                     <div class="relative pt-2">
                                                                         
                                                                             <span class="review-body relative text-lg font-medium line-clamp-7">
-                                                                                Professional customer service. Quickly scheduled me in and did a great job of explaining the differences in film. Great work on my vehicle tint!
+                                                                                Very quick and easy! Good communication and overall service. Highly recommend if you’re looking for high quality vehicle tinting.
                                                                             </span>
                                                                             <span style="display: none;" class="text-secondary font-bold inline uppercase cursor-pointer">See more</span>
                                                                             <span style="display: none;" class="text-secondary font-bold inline uppercase cursor-pointer">See less</span>
@@ -5538,7 +5564,7 @@ Here’s the work they have done for me personally. If I could give more then 5 
                                                                     <footer class="flex items-center justify-between mt-8 space-x-4">
                                                                         <div>
                                                                             
-                                                                                <span class="block font-medium uppercase text-gray-900">Nancy Garcia</span>
+                                                                                <span class="block font-medium uppercase text-gray-900">Noah Kauffman</span>
                                                                             
                                                                             <div class="mt-1 bg-gray-300 text-primary py-1 px-3 font-black text-lg uppercase">Carbon Window Tint</div>
                                                                         </div>
