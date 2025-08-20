@@ -211,59 +211,6 @@
                 
                 
                 
-                    
-                        <div
-    id="launch-site-banner"
-    x-data="{ scrolledFromTop: false }"
-    x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
-    @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
-    :class="{'h-32': !scrolledFromTop, 'h-16': scrolledFromTop}"
-    class="fixed hidden inset-x-0 top-0 z-50 bg-orange-600 sm:h-16 transition-all duration-200"
-    data-heap-component-name="launch-site-banner"
-    data-heap-version="v3"
->
-    <div
-        :class="{'h-32': !scrolledFromTop, 'h-16': scrolledFromTop}"
-        class="relative transition-all duration-200"
-    >
-        <div
-            :class="{'h-32': !scrolledFromTop, 'h-16': scrolledFromTop}"
-            class="flex flex-col justify-center sm:flex-row sm:justify-between sm:h-16 w-4/5 items-start sm:items-center m-auto transition-all duration-200"
-        >
-            <div class="flex flex-row items-center">
-                <div class="hidden sm:flex mr-2 bg-orange-900 rounded-md p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-                    </svg>
-                </div>
-                <div
-                    :class="{'hidden': !scrolledFromTop, 'hidden': scrolledFromTop}"
-                    class="sm:flex text-white text-sm mb-3 sm:mb-0"
-                >
-                    
-
-                    Abertano, you’re just a few clicks from going live! Don’t worry - we can still make edits after launching.
-
-                    
-                    bucks
-                </div>
-            </div>
-            <div class="flex flex-row items-center">
-                <a class="flex bg-white px-4 py-2 rounded-md text-orange-600 mr-4 text-sm" href="https://app.prophone.com/checkout?id=8726">
-                    Launch my site
-                </a>
-                <a id="contact-us-button" class="flex bg-white px-4 py-2 rounded-md text-orange-600 mr-4 text-sm" href="tel:8573653045">
-                    Contact Us
-                </a>
-                <a class="flex font-bold underline underline-offset-4 text-white text-sm" href="https://www.prophone.com/learn-more?id=8726">
-                    Learn more →
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-                    
-                
             
         
             
@@ -732,14 +679,13 @@
                             
                             
                                 <div onclick="postCtaClick('call')" class="w-full sm:w-auto cta_text_button">
-                                    <a
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        href="tel:+15743123618"
+                                    <button
+                                        data-phone="+15743123618" 
+                                        onclick="initiateCall(this); postCtaClick('call')"
                                         class="cta_call_conversion flex justify-center rounded-sm px-6 py-[13px] overflow-hidden bg-tertiary text-secondary hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300 border border-secondary hover:border-tertiary box-border text-sm uppercase tracking-tight font-black"
                                     >
                                         Call Now
-                                    </a>
+                                    </button>
                                 </div>
                             
                             
@@ -1038,13 +984,13 @@
 
                             
                                 <div onclick="postCtaClick('call')">
-                                    <a
-                                        target = "_blank"
-                                        href="tel:+15743123618"
+                                    <button
+                                        data-phone="+15743123618" 
+                                        onclick="initiateCall(this); postCtaClick('call')"
                                         class="cta_call_conversion flex items-center justify-center w-full px-8 py-[13px] whitespace-nowrap transition bg-white text-secondary rounded-sm hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300 border border-secondary hover:border-tertiary box-border text-lg leading-6 font-black tracking-tight uppercase"
                                         >
                                         Call Now
-                                    </a>
+                                    </button>
                                 </div>
                             
                         </div>
@@ -1207,14 +1153,14 @@
                                     
 
                                     
-                                    <div onclick="postCtaClick('call')" class="w-full sm:w-auto mr-4 cta_text_button mt-3 sm:mt-0">
-                                        <a
-                                            target = "_blank"
-                                            href="tel:+15743123618"
+                                    <div class="w-full sm:w-auto mr-4 cta_text_button mt-3 sm:mt-0">
+                                        <button
+                                            data-phone="+15743123618" 
+                                            onclick="initiateCall(this); postCtaClick('call')"
                                             class="cta_call_conversion flex justify-center w-full rounded-sm px-5 py-3 sm:px-10 sm:py-4 overflow-hidden bg-white text-secondary hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300 border border-secondary hover:border-tertiary box-border uppercase"
                                         >
                                             <span>Call Now</span>
-                                        </a>
+                                        </button>
                                     </div>
                                     
                                 </div>
@@ -2121,15 +2067,14 @@
                     
                     
                     
-                        <div onclick="postCtaClick('call')" class="w-full sm:w-auto cta_text_button">
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="tel:+15743123618"
+                        <div class="w-full sm:w-auto cta_text_button">
+                            <button
+                                data-phone="+15743123618" 
+                                onclick="initiateCall(this); postCtaClick('call')"
                                 class="cta_call_conversion flex justify-center rounded-sm p-3 sm:px-10 sm:py-4 overflow-hidden bg-tertiary text-secondary hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300 border border-secondary hover:border-tertiary box-border uppercase whitespace-nowrap"
                             >
                                 Call Now
-                            </a>
+                            </button>
                         </div>
                     
                     
@@ -9761,15 +9706,14 @@ I recommend this business 100%
                     
                     
                     
-                        <div onclick="postCtaClick('call')" class="w-full sm:w-auto cta_text_button">
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="tel:+15743123618"
+                        <div class="w-full sm:w-auto cta_text_button">
+                            <button
+                                data-phone="+15743123618" 
+                                onclick="initiateCall(this); postCtaClick('call')"
                                 class="cta_call_conversion flex justify-center rounded-sm p-3 sm:px-10 sm:py-4 overflow-hidden bg-tertiary text-secondary hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300 border border-secondary hover:border-tertiary box-border uppercase whitespace-nowrap"
                             >
                                 Call Now
-                            </a>
+                            </button>
                         </div>
                     
                     
@@ -10409,7 +10353,7 @@ I recommend this business 100%
                     <div aria-hidden="true" class="absolute inset-x-0 h-8 -bottom-8"></div>
                 </div>
                 <div id="error-state-modal" style="padding-left: 24px; padding-right: 24px;"></div>
-                <form id="contactModal" class="flex flex-col flex-grow overflow-hidden sm:w-full" onsubmit="send_sms('Midwest-Precision-Films', 'contact-modal', '+15743123618')">
+                <form id="contactModal" class="flex flex-col flex-grow overflow-hidden sm:w-full" onsubmit="send_sms('Midwest-Precision-Films', 'contact-modal', deobfuscateNumber('+15743123618'))">
                     <div class="flex flex-col flex-shrink-1 h-auto sm:h-full overflow-x-hidden overflow-y-auto px-6 sm:mt-6 space-y-6 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-4">
                         
                         
@@ -11000,7 +10944,7 @@ I recommend this business 100%
     
 
     
-
+    
     <script>
         window.addEventListener("load", function() {
             setTimeout(function() {
@@ -11010,6 +10954,49 @@ I recommend this business 100%
             }, 5000);
         });
     </script>
+    
+    <script>
+  /**
+   * Phone number obfuscation to prevent bot scraping
+   * Decodes phone numbers from data attributes and initiates calls
+   */
+  function deobfuscateNumber(number) {
+    const isObfuscated = "False" === "True";
+    if (!isObfuscated) {
+      return number;
+    }
+    const binaryPD = atob(number);
+    const bytesPD = Uint8Array.from(binaryPD, (c) => c.charCodeAt(0));
+    const decodedPD = new TextDecoder("utf-8").decode(bytesPD);
+    const phone = decodedPD.slice(20);
+
+    return phone;
+  }
+
+  function initiateCall(element) {
+    const pref = "tel:";
+
+    try {
+      const pd = element.getAttribute("data-phone");
+      if (!pd) {
+        console.error("No phone number found on element to call");
+        return;
+      }
+      const phone = deobfuscateNumber(pd);
+
+      window.location.href = pref + phone;
+    } catch (error) {
+      console.error("Error:", error);
+
+      // Try calling the phone number
+      const fallbackPhone = element.getAttribute("data-phone");
+      if (fallbackPhone) {
+        window.location.href = pref + fallbackPhone.replace(/[^0-9]/g, "");
+      }
+    }
+  }
+</script>
+
 </body>
 
 </html>

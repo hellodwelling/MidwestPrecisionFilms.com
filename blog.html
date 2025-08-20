@@ -661,14 +661,13 @@
                             
                             
                                 <div onclick="postCtaClick('call')" class="w-full sm:w-auto cta_text_button">
-                                    <a
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        href="tel:+15743123618"
+                                    <button
+                                        data-phone="+15743123618" 
+                                        onclick="initiateCall(this); postCtaClick('call')"
                                         class="cta_call_conversion flex justify-center rounded-sm px-6 py-[13px] overflow-hidden bg-tertiary text-secondary hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300 border border-secondary hover:border-tertiary box-border text-sm uppercase tracking-tight font-black"
                                     >
                                         Call Now
-                                    </a>
+                                    </button>
                                 </div>
                             
                             
@@ -967,13 +966,13 @@
 
                             
                                 <div onclick="postCtaClick('call')">
-                                    <a
-                                        target = "_blank"
-                                        href="tel:+15743123618"
+                                    <button
+                                        data-phone="+15743123618" 
+                                        onclick="initiateCall(this); postCtaClick('call')"
                                         class="cta_call_conversion flex items-center justify-center w-full px-8 py-[13px] whitespace-nowrap transition bg-white text-secondary rounded-sm hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300 border border-secondary hover:border-tertiary box-border text-lg leading-6 font-black tracking-tight uppercase"
                                         >
                                         Call Now
-                                    </a>
+                                    </button>
                                 </div>
                             
                         </div>
@@ -1236,6 +1235,30 @@
     >
         <div class="flex flex-col items-center mx-auto max-w-7xl">
             <div class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8 pt-9 pb-14 px-4 sm:px-6 sm:pt-12 sm:pb-20">
+                
+                    <div class="flex flex-col bg-white rounded-lg shadow-lg p-8 items-start">
+                        <div class="text-left text-sm text-gray-500">Aug 20, 2025</div>
+                        <div class="text-left text-xl text-gray-900 font-semibold mt-2">
+                            <a
+                                class="text-left text-3xl sm:text-2xl text-gray-900 font-black uppercase"
+                                href="blog-elegance-and-efficiency-midwest-precision"
+                            >
+                                Elegance and Efficiency: Midwest Precision Films&#x27; Formula for Superior Tinting Solutions
+                            </a>
+                        </div>
+                        <div class="text-left text-gray-900 line-clamp-5 my-4 text-lg sm:text-base">When it comes to enhancing both the appearance and functionality of your vehicle, tinting your windows is a choice that combines elegance with practicality. Midwest Precision Films is at the forefron…</div>
+                        <div class="text-left mt-auto text-primary">
+                            <a
+                                class="text-secondary font-black uppercase text-lg sm:text-xl flex gap-2 items-center"
+                                href="blog-elegance-and-efficiency-midwest-precision"
+                            >
+                                Read full post
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#C00702">
+                                    <path d="M11.6667 4.16669L17.5 10M17.5 10L11.6667 15.8334M17.5 10L2.5 10" stroke="#C00702" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 
                     <div class="flex flex-col bg-white rounded-lg shadow-lg p-8 items-start">
                         <div class="text-left text-sm text-gray-500">Aug 14, 2025</div>
@@ -2532,7 +2555,7 @@
                     <div aria-hidden="true" class="absolute inset-x-0 h-8 -bottom-8"></div>
                 </div>
                 <div id="error-state-modal" style="padding-left: 24px; padding-right: 24px;"></div>
-                <form id="contactModal" class="flex flex-col flex-grow overflow-hidden sm:w-full" onsubmit="send_sms('Midwest-Precision-Films', 'contact-modal', '+15743123618')">
+                <form id="contactModal" class="flex flex-col flex-grow overflow-hidden sm:w-full" onsubmit="send_sms('Midwest-Precision-Films', 'contact-modal', deobfuscateNumber('+15743123618'))">
                     <div class="flex flex-col flex-shrink-1 h-auto sm:h-full overflow-x-hidden overflow-y-auto px-6 sm:mt-6 space-y-6 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-4">
                         
                         
@@ -3163,15 +3186,14 @@
                     
                     
                     
-                        <div onclick="postCtaClick('call')" class="w-full sm:w-auto cta_text_button">
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="tel:+15743123618"
+                        <div class="w-full sm:w-auto cta_text_button">
+                            <button
+                                data-phone="+15743123618" 
+                                onclick="initiateCall(this); postCtaClick('call')"
                                 class="cta_call_conversion flex justify-center rounded-sm p-3 sm:px-10 sm:py-4 overflow-hidden bg-tertiary text-secondary hover:ring-2 hover:ring-offset-2 hover:ring-secondary transition-all ease-out duration-300 border border-secondary hover:border-tertiary box-border uppercase whitespace-nowrap"
                             >
                                 Call Now
-                            </a>
+                            </button>
                         </div>
                     
                     
@@ -3587,7 +3609,7 @@
     
 
     
-
+    
     <script>
         window.addEventListener("load", function() {
             setTimeout(function() {
@@ -3597,6 +3619,49 @@
             }, 5000);
         });
     </script>
+    
+    <script>
+  /**
+   * Phone number obfuscation to prevent bot scraping
+   * Decodes phone numbers from data attributes and initiates calls
+   */
+  function deobfuscateNumber(number) {
+    const isObfuscated = "False" === "True";
+    if (!isObfuscated) {
+      return number;
+    }
+    const binaryPD = atob(number);
+    const bytesPD = Uint8Array.from(binaryPD, (c) => c.charCodeAt(0));
+    const decodedPD = new TextDecoder("utf-8").decode(bytesPD);
+    const phone = decodedPD.slice(20);
+
+    return phone;
+  }
+
+  function initiateCall(element) {
+    const pref = "tel:";
+
+    try {
+      const pd = element.getAttribute("data-phone");
+      if (!pd) {
+        console.error("No phone number found on element to call");
+        return;
+      }
+      const phone = deobfuscateNumber(pd);
+
+      window.location.href = pref + phone;
+    } catch (error) {
+      console.error("Error:", error);
+
+      // Try calling the phone number
+      const fallbackPhone = element.getAttribute("data-phone");
+      if (fallbackPhone) {
+        window.location.href = pref + fallbackPhone.replace(/[^0-9]/g, "");
+      }
+    }
+  }
+</script>
+
 </body>
 
 </html>
